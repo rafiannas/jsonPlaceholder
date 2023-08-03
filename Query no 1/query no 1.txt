@@ -1,0 +1,18 @@
+IT QA Engineer Test (Automation)
+
+1. Query
+a) 
+SELECT emp_name,emp_status
+FROM tbl_employee
+
+b)
+SELECT emp_name,emp_income
+FROM tbl_employee,tbl_income
+WHERE tbl_employee.emp_code = tbl_income.emp_code
+AND tbl_employee.emp_status = "R"
+
+c)
+SELECT tbl_employee.*,emp_income
+FROM tbl_employee,tbl_income
+WHERE tbl_employee.emp_code = tbl_income.emp_code
+ORDER BY emp_income DESC
